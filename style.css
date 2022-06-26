@@ -1,0 +1,218 @@
+/* ==== VAR ============ */
+:root {
+    /* Primary colors */
+    --Orange: hsl(25, 97%, 53%);
+
+    /* Neutral colors */
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+/* ==== ATTRIBUTION ==== */
+.attribution {
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.attribution:hover {
+    opacity: 1;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* ==== CHALLENGE ====== */
+body {
+    font-size: 15px;
+    background: var(--VeryDarkBlue);
+    color: var(--White);
+    font-family: "Overpass", sans-serif;
+}
+body > article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 14px;
+    background: var(--DarkBlue);
+    padding: 2rem;
+    max-width: 19rem;
+    overflow: hidden;
+}
+h1 {
+    margin-top: 0;
+}
+h1::before {
+    display: inherit;
+    content: "";
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: hsla(216, 12%, 54%, 0.1);
+    margin-bottom: 2rem;
+}
+h1::after {
+    display: inherit;
+    content: "";
+    width: 17px;
+    height: 16px;
+    background: url("./images/icon-star.svg") no-repeat;
+    position: absolute;
+    z-index: 10;
+    top: 44px;
+    left: 44px;
+}
+.card1::before,
+.card2::before {
+    display: inline-block;
+    content: "";
+    width: 20rem;
+    height: 20rem;
+    background: radial-gradient(
+        circle,
+        rgba(111, 123, 138, 0.1) 0%,
+        rgba(40, 47, 55, 0) 70%
+    );
+    position: absolute;
+    top: -10rem;
+    z-index: -10;
+}
+.card1 > p,
+.card2__paragraph2 {
+    font-size: 14px;
+    opacity: 0.5;
+    font-weight: 400;
+}
+.card1__form fieldset {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border: none;
+}
+.card1__form label {
+    cursor: pointer;
+    width: 3rem;
+    background: hsla(216, 12%, 54%, 0.1);
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 52px;
+    transition: background 0.1s ease-in-out;
+}
+.card1__form label:hover {
+    background: var(--MediumGrey);
+}
+.card1__form input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.card1__form input:focus-visible + label,
+button:focus-visible {
+    outline: 3px dashed var(--Orange);
+    outline-offset: 3px;
+}
+
+.card1__form input:checked + label {
+    background: var(--Orange);
+    animation: elastic 0.2s;
+}
+@keyframes elastic {
+    0% {
+        transform: scale(0.85);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.card1__form button {
+    height: 3rem;
+    padding: 15px;
+    background: var(--Orange);
+    width: 100%;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    color: var(--White);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.1s, color 0.1s;
+    line-height: 20px;
+}
+.card1__form button:hover {
+    background: var(--White);
+    color: var(--Orange);
+}
+.card2 {
+    text-align: center;
+    width: 18em;
+}
+.card2__paragraph1 {
+    background: hsla(216, 12%, 54%, 0.15);
+    padding: 0 15px;
+    height: 28px;
+    line-height: 30px;
+    border-radius: 2rem;
+    width: max-content;
+    margin: 20px auto;
+    font-size: 14px;
+    color: var(--Orange);
+}
+.hidden {
+    transform: translate(-50%, -50%) scale(0);
+}
+.show {
+    transform: translate(-50%, -50%) scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+#radio1 {
+    left: 11rem;
+    bottom: 38px;
+    z-index: -100;
+    opacity: 1;
+    width: 1px;
+    height: 1px;
+}
+@media screen and (max-width: 460px) {
+    h1::after {
+        top: 36px;
+        left: 36px;
+    }
+    body > article,
+    .card2 {
+        width: 70vw;
+        padding: 1.5rem;
+        font-size: 14px;
+    }
+    .card1__form label {
+        width: 40px;
+        height: 40px;
+        line-height: 44px;
+    }
+    .card1__form fieldset {
+        justify-content: space-around;
+        gap: 7px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    body > article {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
