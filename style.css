@@ -197,7 +197,8 @@ button:focus-visible {
         left: 36px;
     }
     body > article,
-    .card2 {
+    .card2,
+    main{
         width: 70vw;
         padding: 1.5rem;
         font-size: 14px;
