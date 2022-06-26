@@ -42,8 +42,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    border-radius: 14px;
-    background: var(--DarkBlue);
+    border-radius: 25px;
+    background: hsl(213deg 19% 18% / 50%);
     padding: 2rem;
     max-width: 19rem;
     overflow: hidden;
