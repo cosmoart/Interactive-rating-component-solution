@@ -99,5 +99,5 @@ This challenge was a great learning opportunity, it was also very useful to rein
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-[live-page]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[solution-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[live-page]: https://cosmoart.github.io/Interactive-rating-component-solutiong/
+[solution-url]: https://www.frontendmentor.io/solutions/interactive-rating-component-solution-y8oniyswv0
