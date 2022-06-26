@@ -141,7 +141,7 @@ button:focus-visible {
     }
 }
 .card1__form button {
-    height: 3rem;
+    height: 2.5rem;
     padding: 15px;
     background: var(--Orange);
     width: 100%;
@@ -154,7 +154,7 @@ button:focus-visible {
     font-size: 14px;
     font-weight: 700;
     transition: background 0.1s, color 0.1s;
-    line-height: 20px;
+    line-height: 1px;
 }
 .card1__form button:hover {
     background: var(--White);
