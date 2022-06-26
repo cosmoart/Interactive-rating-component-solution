@@ -212,7 +212,7 @@ button:focus-visible {
     }
 }
 @media screen and (min-width: 1400px) {
-    body > article {
+    .card1, .card2{
         transform: translate(-50%, -50%) scale(1.1);
     }
 }
