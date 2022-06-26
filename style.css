@@ -37,8 +37,7 @@ body {
     color: var(--White);
     font-family: "Overpass", sans-serif;
 }
-body > article,
-main{
+.card1, .card2{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -196,9 +195,8 @@ button:focus-visible {
         top: 36px;
         left: 36px;
     }
-    body > article,
-    .card2,
-    main{
+    .card1
+    .card2,{
         width: 70vw;
         padding: 1.5rem;
         font-size: 14px;
