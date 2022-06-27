@@ -87,6 +87,8 @@ This challenge was a great learning opportunity, it was also very useful to rein
 -   [BEM Methodology In CSS: A Quick Start Guide](https://scalablecss.com/bem-quickstart-guide/)
 -   [Creating clean CSS with BEM methodology](https://www.devbridge.com/articles/implementing-clean-css-bem-method/)
 -   [Introducción a la metodología BEM](https://samutorres.com/blog/introduccion-a-la-metodologia-bem)
+- [Writing maintainable CSS](https://dev.to/ziizium/writing-maintainable-css-5ge9)
+- [8 simple rules for a robust, scalable CSS architecture](https://github.com/jareware/css-architecture/blob/master/README.md)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
